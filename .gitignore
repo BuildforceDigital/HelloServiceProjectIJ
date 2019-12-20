@@ -1,3 +1,5 @@
 /.idea/
-/target/classes/app/
-/out/artifacts/HelloServiceProjectJB_war_exploded/
+/HelloServiceProjectJB.iml
+/null/
+/out/
+target/
