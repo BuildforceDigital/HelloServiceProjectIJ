@@ -1,6 +1,6 @@
 organization := "com.micronautics" // TODO provide your organization's information
 
-name := "HelloServiceProjectJB"
+name := "HelloServiceProjectIJ"
 
 version := "0.1"
 
