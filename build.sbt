@@ -15,8 +15,7 @@ javacOptions ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "javax.servlet" % "javax.servlet-api" % "4.0.1" % "provided",
-  "javax.servlet.jsp" % "javax.servlet.jsp-api" % "2.3.3" % "provided",
-  "org.scalatest" %% "scalatest" % "3.1.0" % Test withSources(),
-  "junit" % "junit" % "4.12" % Test
+  "javax.servlet"    % "javax.servlet-api"     % "4.0.1" % "provided",
+  "javax.servlet.jsp"% "javax.servlet.jsp-api" % "2.3.3" % "provided",
+  "org.scalatest"   %% "scalatest"             % "3.1.0" %  Test
 )
