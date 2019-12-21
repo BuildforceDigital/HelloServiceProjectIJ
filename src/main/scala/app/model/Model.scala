@@ -1,15 +1,17 @@
 package app.model
 
-import java.util
-
-import app.entities.User
-
 import scala.jdk.CollectionConverters._
 
+case class User(name: String, password: String) {
+  def getName: String = name
+
+  override def toString: String = s"User{name='$name', password='$password'}"
+}
+
 object Model {
-  val model: util.ArrayList[User] = new util.ArrayList()
+  val model = collection.mutable.ArrayBuffer[User]()
 
-  def add(user: User): Unit = model.add(user)
+  def add(user: User): Unit = model.append(user)
 
-  def list: util.List[String] = model.asScala.map(_.name).asJava
+  def userList: java.util.List[String] = model.map(_.name).asJava
 }
